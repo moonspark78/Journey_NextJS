@@ -1,9 +1,10 @@
+import Home from "@/components/Home/Home";
+import React from "react";
 
-
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="text-6xl text-red-500">
-      HomePage
+    <div className="">
+      <Home/>
     </div>
   );
 }
