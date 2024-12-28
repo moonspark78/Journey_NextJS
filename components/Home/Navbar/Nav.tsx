@@ -32,12 +32,12 @@ const Nav = ({openNav}:Props) => {
 
 
   return (
-    <div className={`fixed ${navBg ? "bg-indigo-800" : "fixed"} w-full transition-all duration-200 h-[12vh] z-[1000] bg-blue-700`}>
+    <div className={`fixed ${navBg ? "bg-indigo-800" : "fixed"} w-full transition-all duration-200 h-[12vh] z-[1000]`}>
         <div className='flex justify-between items-center h-full w-[90%] xl:w-[80%] mx-auto'>
             {/* Logo */}
             <Image src={"/images/logo.png"} alt='logo' width={120} height={120}/>
             {/* NavLinls  */}
-            <div className='hidden lg:flex items-center space-x-8'>
+            <div className='hidden lg:flex items-center space-x-8'> 
                {navLinks.map((link)=> {
                     return (
                         <Link key={link.id} href={link.url}>
