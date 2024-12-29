@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import React from 'react'
+import { FaStar } from 'react-icons/fa';
 import Tilt from 'react-parallax-tilt';
 
 
@@ -51,6 +52,19 @@ const CourseCard = ({course}:Props) => {
                 <h1 className='text-xl text-black font-bold mt-2'>
                     {course.title}
                 </h1>
+                {/* review */}
+                <div className='flex items-center mt-2 space-x-2'> 
+                    <div className='flex items-center'>
+                        <FaStar className='text-yellow-600 w-4 h-4'/>
+                        <FaStar className='text-yellow-600 w-4 h-4'/>
+                        <FaStar className='text-yellow-600 w-4 h-4'/>
+                        <FaStar className='text-yellow-600 w-4 h-4'/>
+                        <FaStar className='text-yellow-600 w-4 h-4'/>
+                    </div>
+                    <span className='text-base text-orange-800 font-semibold'>
+                        ({course.reviewNumber} Reviews)
+                    </span>
+                </div>
             </div>
         </div>
     </Tilt>
