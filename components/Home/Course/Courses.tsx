@@ -1,6 +1,8 @@
+
 import { coursesData } from '@/data/data'
 import Image from 'next/image'
 import React from 'react'
+import CourseCard from './CourseCard'
 
 const Courses = () => {
   return (
@@ -18,7 +20,7 @@ const Courses = () => {
             <div className='md:mt-16 mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
                 {coursesData.map((course) =>{
                     return <div key={course.id}>
-
+                        <CourseCard course={course}/>
                     </div>
                 })}
             </div>
