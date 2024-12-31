@@ -2,6 +2,7 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import SliderCard from './SliderCard';
 
 
 const responsive = {
@@ -26,8 +27,19 @@ const responsive = {
 
 const Slider = () => {
   return (
-    <Carousel responsive={responsive}>
-        Slider
+    <Carousel 
+        responsive={responsive}
+        additionalTransfrom={0}
+        arrows={true}
+        autoPlay={true}
+        autoPlaySpeed={5000}
+        centerMode={false}
+        infinite
+        itemClass='item'
+    >
+        <SliderCard image="/images/r1.jpg" name="Jae Dirmi" role="Web Developer"/>
+        <SliderCard image="/images/r2.jpg" name="Lorili sdrit" role="Next Js Developer"/>
+        <SliderCard image="/images/r3.jpg" name="Mihu Hu" role="Front Developer"/>
     </Carousel>
   )
 }
