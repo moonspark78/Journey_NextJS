@@ -26,7 +26,9 @@ const responsive = {
 
 const Slider = () => {
   return (
-    <div>Slider</div>
+    <Carousel responsive={responsive}>
+        Slider
+    </Carousel>
   )
 }
 
